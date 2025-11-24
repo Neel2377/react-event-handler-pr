@@ -1,0 +1,217 @@
+/* -------------------------------------------------- */
+/* BACKGROUND                                         */
+/* -------------------------------------------------- */
+
+body {
+  background: whitesmoke; /* soft cream from your palette */
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+.container {
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+/* -------------------------------------------------- */
+/* GLASS CARD (FORM CARD)                             */
+/* -------------------------------------------------- */
+
+.card {
+  border-radius: 22px !important;
+  padding: 22px;
+  background: linear-gradient(135deg, #3b82f625, #1e3a8a25) !important;
+
+  border: 2px solid !important;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+}
+
+.card h4,
+.card h5 {
+  animation: slideDown 0.6s ease;
+  letter-spacing: 0.5px;
+}
+
+/* -------------------------------------------------- */
+/* FORM INPUTS                                        */
+/* -------------------------------------------------- */
+
+.form-control {
+  border-radius: 12px !important;
+  border: 1px solid #d3d8df !important;
+  background: rgba(255, 255, 255, 0.85);
+  transition: all 0.25s ease;
+  font-size: 15px;
+  padding: 10px 14px;
+}
+
+.form-control:focus {
+  border-color: #4c8bf5 !important;
+  box-shadow: 0 0 6px rgba(76, 139, 245, 0.4) !important;
+}
+
+/* Submit Button */
+.btn-primary {
+  background: linear-gradient(135deg, #4c8bf5, #336de8);
+  border-radius: 12px !important;
+  padding: 12px;
+  border: none !important;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #336de8, #2a5dcc);
+  transform: translateY(-2px);
+}
+
+/* -------------------------------------------------- */
+/* STAR HOVER                                          */
+/* -------------------------------------------------- */
+
+.star {
+  transition: transform 0.2s ease, color 0.25s ease;
+}
+
+.star:hover {
+  transform: scale(1.25);
+}
+
+/* -------------------------------------------------- */
+/* TESTIMONIAL GRID                                    */
+/* -------------------------------------------------- */
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 35px;
+  margin-top: 50px;
+}
+
+/* -------------------------------------------------- */
+/* TESTIMONIAL BOX                                     */
+/* -------------------------------------------------- */
+
+.testimonial-box {
+  position: relative;
+  background: #ffffff;
+  padding: 35px 30px 75px;
+  border-radius: 22px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.testimonial-box:hover {
+  transform: translateY(-4px);
+}
+
+/* -------------------------------------------------- */
+/* PROFILE CIRCLE / IMAGE                              */
+/* -------------------------------------------------- */
+
+.profile-wrapper {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  border-width: 5px;
+  border-style: solid;
+  position: absolute;
+  top: -42px;
+  left: 30px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-icon {
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  background-size: cover;        /* FIX */
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;            
+}
+
+
+/* -------------------------------------------------- */
+/* CONTENT AREA                                        */
+/* -------------------------------------------------- */
+
+.content-area {
+  margin-top: 45px;
+}
+
+.client-name {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.client-role {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.divider {
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  margin: 12px 0 15px;
+}
+
+.client-comment {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5rem;
+}
+
+/* -------------------------------------------------- */
+/* BOTTOM STAR PANEL                                   */
+/* -------------------------------------------------- */
+
+.bottom-section {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 65px;
+  width: 100%;
+  border-radius: 0 0 22px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.stars-row {
+  display: flex;
+  gap: 5px;
+}
+
+.quote-mark {
+  font-size: 30px;
+  color: white;
+  opacity: 0.9;
+}
+
+/* -------------------------------------------------- */
+/* ANIMATIONS                                          */
+/* -------------------------------------------------- */
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
