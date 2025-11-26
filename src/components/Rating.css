@@ -12,6 +12,12 @@ body {
   animation: fadeIn 0.7s ease-in-out;
 }
 
+.form-label {
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+
 /* -------------------------------------------------- */
 /* GLASS CARD (FORM CARD)                             */
 /* -------------------------------------------------- */
@@ -94,6 +100,7 @@ body {
   gap: 35px;
   margin-top: 50px;
 }
+
 
 /* -------------------------------------------------- */
 /* TESTIMONIAL BOX                                     */
@@ -214,4 +221,21 @@ body {
 @keyframes slideDown {
   from { opacity: 0; transform: translateY(-10px); }
   to   { opacity: 1; transform: translateY(0); }
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.delete-btn:hover {
+  background: #b91c1c;
+  transform: scale(1.05);
 }
